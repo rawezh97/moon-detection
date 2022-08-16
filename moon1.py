@@ -20,7 +20,7 @@ while True:
     #cv2.imshow("blur",imblur)
     cv2.imshow("canny",imcanny)
     #cv2.imshow("frame",frame)
-    key = cv2.waitKey(1)
+    cv2.waitKey(1)
     if key == 27:
         break
 video.release()

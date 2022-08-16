@@ -21,7 +21,7 @@ while True:
     cv2.imshow("canny",imcanny)
     #cv2.imshow("frame",frame)
     
-    ifcv2.waitKey(1):
+    if cv2.waitKey(1) & 0xFF==ord('q'):
         break
 video.release()
 cv2.distroyAllWindows()

@@ -20,8 +20,8 @@ while True:
     #cv2.imshow("blur",imblur)
     cv2.imshow("canny",imcanny)
     #cv2.imshow("frame",frame)
-    cv2.waitKey(1)
-    if:
+    
+    ifcv2.waitKey(1):
         break
 video.release()
 cv2.distroyAllWindows()

@@ -12,6 +12,12 @@ while True:
     imblur = cv2.GaussianBlur(imgray,(5,5),1)
     imcanny = cv2.Canny(imblur,150,0)
     
+#rect = cv.minAreaRect(cnt)
+#box = cv.boxPoints(rect)
+#box = np.int0(box)
+#cv.drawContours(img,[box],0,(0,0,255),2)  https://docs.opencv.org/4.x/dd/d49/tutorial_py_contour_features.html  
+    
+    
     countours , hieararchy = cv2.findContours(imcanny , cv2.RETR_EXTERNAL , cv2.CHAIN_APPROX_NONE)
     cv2.drawContours(copyframe , countours , -1 , (0,255,0),2)
   

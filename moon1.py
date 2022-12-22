@@ -17,7 +17,6 @@ while True:
 #box = np.int0(box)
 #cv.drawContours(img,[box],0,(0,0,255),2)  https://docs.opencv.org/4.x/dd/d49/tutorial_py_contour_features.html  
     
-    
     countours , hieararchy = cv2.findContours(imcanny , cv2.RETR_EXTERNAL , cv2.CHAIN_APPROX_NONE)
     cv2.drawContours(copyframe , countours , -1 , (0,255,0),2)
   
